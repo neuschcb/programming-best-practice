@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>项目结构 - 软件开发最佳实践</title>
+        <title>安全性设计 - 软件开发最佳实践</title>
 
 
         <!-- Custom HTML head -->
@@ -88,7 +88,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="../index.html"><strong aria-hidden="true">1.</strong> 总览</a></li><li class="chapter-item expanded affix "><li class="part-title">分析</li><li class="chapter-item expanded "><a href="../analyse/requirement_analysis.html"><strong aria-hidden="true">2.</strong> 需求分析</a></li><li class="chapter-item expanded "><a href="../analyse/requirement_analysis.html"><strong aria-hidden="true">3.</strong> 成本分析</a></li><li class="chapter-item expanded affix "><li class="part-title">设计</li><li class="chapter-item expanded "><a href="../design/ui_design.html"><strong aria-hidden="true">4.</strong> UI设计</a></li><li class="chapter-item expanded "><a href="../design/api_design.html"><strong aria-hidden="true">5.</strong> API设计</a></li><li class="chapter-item expanded "><a href="../design/micro_design.html"><strong aria-hidden="true">6.</strong> 微服务设计</a></li><li class="chapter-item expanded "><a href="../design/secure.html"><strong aria-hidden="true">7.</strong> 安全性设计</a></li><li class="chapter-item expanded "><a href="../design/choice.html"><strong aria-hidden="true">8.</strong> 选型</a></li><li class="chapter-item expanded affix "><li class="part-title">编码</li><li class="chapter-item expanded "><a href="../code/project_structure.html" class="active"><strong aria-hidden="true">9.</strong> 项目结构</a></li><li class="chapter-item expanded "><a href="../code/encapsulation.html"><strong aria-hidden="true">10.</strong> 封装</a></li><li class="chapter-item expanded "><a href="../code/intercept.html"><strong aria-hidden="true">11.</strong> 拦截</a></li><li class="chapter-item expanded affix "><li class="part-title">测试</li><li class="chapter-item expanded "><a href="../testing/index.html"><strong aria-hidden="true">12.</strong> 测试</a></li><li class="chapter-item expanded affix "><li class="part-title">部署</li><li class="chapter-item expanded "><a href="../deploy/single.html"><strong aria-hidden="true">13.</strong> 单机部署</a></li><li class="chapter-item expanded "><a href="../deploy/container.html"><strong aria-hidden="true">14.</strong> 容器部署</a></li><li class="chapter-item expanded affix "><li class="part-title">杂项</li><li class="chapter-item expanded "><a href="../others/no_internet_programming.html"><strong aria-hidden="true">15.</strong> 关于内网开发</a></li><li class="chapter-item expanded "><a href="../others/continuous-integration.html"><strong aria-hidden="true">16.</strong> 关于持续集成</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../index.html"><strong aria-hidden="true">1.</strong> 总览</a></li><li class="chapter-item expanded affix "><li class="part-title">分析</li><li class="chapter-item expanded "><a href="../analyse/requirement_analysis.html"><strong aria-hidden="true">2.</strong> 需求分析</a></li><li class="chapter-item expanded "><a href="../analyse/requirement_analysis.html"><strong aria-hidden="true">3.</strong> 成本分析</a></li><li class="chapter-item expanded affix "><li class="part-title">设计</li><li class="chapter-item expanded "><a href="../design/ui_design.html"><strong aria-hidden="true">4.</strong> UI设计</a></li><li class="chapter-item expanded "><a href="../design/api_design.html"><strong aria-hidden="true">5.</strong> API设计</a></li><li class="chapter-item expanded "><a href="../design/micro_design.html"><strong aria-hidden="true">6.</strong> 微服务设计</a></li><li class="chapter-item expanded "><a href="../design/secure.html" class="active"><strong aria-hidden="true">7.</strong> 安全性设计</a></li><li class="chapter-item expanded "><a href="../design/choice.html"><strong aria-hidden="true">8.</strong> 选型</a></li><li class="chapter-item expanded affix "><li class="part-title">编码</li><li class="chapter-item expanded "><a href="../code/project_structure.html"><strong aria-hidden="true">9.</strong> 项目结构</a></li><li class="chapter-item expanded "><a href="../code/encapsulation.html"><strong aria-hidden="true">10.</strong> 封装</a></li><li class="chapter-item expanded "><a href="../code/intercept.html"><strong aria-hidden="true">11.</strong> 拦截</a></li><li class="chapter-item expanded affix "><li class="part-title">测试</li><li class="chapter-item expanded "><a href="../testing/index.html"><strong aria-hidden="true">12.</strong> 测试</a></li><li class="chapter-item expanded affix "><li class="part-title">部署</li><li class="chapter-item expanded "><a href="../deploy/single.html"><strong aria-hidden="true">13.</strong> 单机部署</a></li><li class="chapter-item expanded "><a href="../deploy/container.html"><strong aria-hidden="true">14.</strong> 容器部署</a></li><li class="chapter-item expanded affix "><li class="part-title">杂项</li><li class="chapter-item expanded "><a href="../others/no_internet_programming.html"><strong aria-hidden="true">15.</strong> 关于内网开发</a></li><li class="chapter-item expanded "><a href="../others/continuous-integration.html"><strong aria-hidden="true">16.</strong> 关于持续集成</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle">
                 <div class="sidebar-resize-indicator"></div>
@@ -150,7 +150,7 @@
                         <a href="https://github.com/neuschcb/programming-best-practice" title="Git repository" aria-label="Git repository">
                             <i id="git-repository-button" class="fa fa-github"></i>
                         </a>
-                        <a href="https://github.com/neuschcb/programming-best-practice/edit/main/src/code/project_structure.md" title="Suggest an edit" aria-label="Suggest an edit">
+                        <a href="https://github.com/neuschcb/programming-best-practice/edit/main/src/design/secure.md" title="Suggest an edit" aria-label="Suggest an edit">
                             <i id="git-edit-button" class="fa fa-edit"></i>
                         </a>
 
@@ -179,30 +179,20 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="项目结构"><a class="header" href="#项目结构">项目结构</a></h1>
-<p>项目结构是本项目二阶段接手后最大的问题。结构不清晰，命名模糊，过度分包等问题在本项目第一阶段代码中得到了充分的体现。项目结构本应该是设计阶段就确定好的，但编码习惯有可能将设计完善的代码结构变得再次混乱。在二阶段的开发过程中，我们遵循了如下的开发规范：</p>
-<ul>
-<li>
-<p>Controller层不包含任何业务逻辑，只作为Service层代码的wrapper使用，具体业务逻辑均在Service层中实现。</p>
-</li>
-<li>
-<p>Service层分为两层，ControllerService和Service，ControllerService调用Service，通常一个ControllerService可以调用多个Service，Controller调用ControllerService，通常一个Controller只能调用一个ControllerService。</p>
-</li>
-<li>
-<p>Service层所有基础类均为接口，另有单独的Impl类做具体实现（Impl类注册时注册为接口名称）</p>
-<p>我们强烈建议在新项目开发时也遵循上述的规则，既方便替换，也方便生成假数据。</p>
-</li>
-</ul>
+                        <h1 id="安全性设计"><a class="header" href="#安全性设计">安全性设计</a></h1>
+<p>项目的安全性设计是项目设计中很重要的部分，即使你的项目并不安全你也要设计的看起来很安全。这其中有一定的技巧，比如引入验证码，https，操作确认等前端组件的设计，又比如良好的鉴权逻辑。最简单的鉴权逻辑应该是在网关层设置一层拦截过滤器，对不带token的请求进行拦截，这种操作是网关几乎都有的功能，查阅你选择的网关即可。</p>
+<p>关于账号登录的设计，我们的建议是参考<code>OAuth</code>，<code>OpenID Connect</code>等成熟的协议并加以适当的增删和修改，必要的时候可以使用<code>keycloak</code>等服务来进行账号登录逻辑的开发。</p>
+<p>对于token，如果是单后端，没有微服务，没有分布式，那其实session和jwt都是不错的选择，但像本项目一样存在多个后端的话，那最好还是使用jwt作为鉴权的token，或者使用redis存储session信息，不要使用原生的session。</p>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                            <a rel="prev" href="../design/choice.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="../design/micro_design.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
 
-                            <a rel="next prefetch" href="../code/encapsulation.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next prefetch" href="../design/choice.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
 
@@ -212,11 +202,11 @@
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="../design/choice.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="../design/micro_design.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
 
-                    <a rel="next prefetch" href="../code/encapsulation.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next prefetch" href="../design/choice.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
             </nav>

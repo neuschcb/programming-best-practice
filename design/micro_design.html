@@ -88,7 +88,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="../index.html"><strong aria-hidden="true">1.</strong> 总览</a></li><li class="chapter-item expanded affix "><li class="part-title">分析</li><li class="chapter-item expanded "><a href="../analyse/requirement_analysis.html"><strong aria-hidden="true">2.</strong> 需求分析流程</a></li><li class="chapter-item expanded affix "><li class="part-title">设计</li><li class="chapter-item expanded "><a href="../design/ui_design.html"><strong aria-hidden="true">3.</strong> UI设计</a></li><li class="chapter-item expanded "><a href="../design/api_design.html"><strong aria-hidden="true">4.</strong> API设计</a></li><li class="chapter-item expanded "><a href="../design/micro_design.html" class="active"><strong aria-hidden="true">5.</strong> 微服务设计</a></li><li class="chapter-item expanded "><a href="../design/choice.html"><strong aria-hidden="true">6.</strong> 选型</a></li><li class="chapter-item expanded affix "><li class="part-title">编码</li><li class="chapter-item expanded "><a href="../code/project_structure.html"><strong aria-hidden="true">7.</strong> 项目结构</a></li><li class="chapter-item expanded "><a href="../code/encapsulation.html"><strong aria-hidden="true">8.</strong> 封装</a></li><li class="chapter-item expanded "><a href="../code/intercept.html"><strong aria-hidden="true">9.</strong> 拦截</a></li><li class="chapter-item expanded affix "><li class="part-title">测试</li><li class="chapter-item expanded affix "><li class="part-title">部署</li><li class="chapter-item expanded affix "><li class="part-title">杂项</li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../index.html"><strong aria-hidden="true">1.</strong> 总览</a></li><li class="chapter-item expanded affix "><li class="part-title">分析</li><li class="chapter-item expanded "><a href="../analyse/requirement_analysis.html"><strong aria-hidden="true">2.</strong> 需求分析</a></li><li class="chapter-item expanded "><a href="../analyse/requirement_analysis.html"><strong aria-hidden="true">3.</strong> 成本分析</a></li><li class="chapter-item expanded affix "><li class="part-title">设计</li><li class="chapter-item expanded "><a href="../design/ui_design.html"><strong aria-hidden="true">4.</strong> UI设计</a></li><li class="chapter-item expanded "><a href="../design/api_design.html"><strong aria-hidden="true">5.</strong> API设计</a></li><li class="chapter-item expanded "><a href="../design/micro_design.html" class="active"><strong aria-hidden="true">6.</strong> 微服务设计</a></li><li class="chapter-item expanded "><a href="../design/secure.html"><strong aria-hidden="true">7.</strong> 安全性设计</a></li><li class="chapter-item expanded "><a href="../design/choice.html"><strong aria-hidden="true">8.</strong> 选型</a></li><li class="chapter-item expanded affix "><li class="part-title">编码</li><li class="chapter-item expanded "><a href="../code/project_structure.html"><strong aria-hidden="true">9.</strong> 项目结构</a></li><li class="chapter-item expanded "><a href="../code/encapsulation.html"><strong aria-hidden="true">10.</strong> 封装</a></li><li class="chapter-item expanded "><a href="../code/intercept.html"><strong aria-hidden="true">11.</strong> 拦截</a></li><li class="chapter-item expanded affix "><li class="part-title">测试</li><li class="chapter-item expanded "><a href="../testing/index.html"><strong aria-hidden="true">12.</strong> 测试</a></li><li class="chapter-item expanded affix "><li class="part-title">部署</li><li class="chapter-item expanded "><a href="../deploy/single.html"><strong aria-hidden="true">13.</strong> 单机部署</a></li><li class="chapter-item expanded "><a href="../deploy/container.html"><strong aria-hidden="true">14.</strong> 容器部署</a></li><li class="chapter-item expanded affix "><li class="part-title">杂项</li><li class="chapter-item expanded "><a href="../others/no_internet_programming.html"><strong aria-hidden="true">15.</strong> 关于内网开发</a></li><li class="chapter-item expanded "><a href="../others/continuous-integration.html"><strong aria-hidden="true">16.</strong> 关于持续集成</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle">
                 <div class="sidebar-resize-indicator"></div>
@@ -180,6 +180,8 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="微服务设计"><a class="header" href="#微服务设计">微服务设计</a></h1>
+<p>做微服务设计一方面是为分布式做准备，另一方面也是对于异构的项目来说必须经理的设计。本项目中使用了springboot，scala（spark），python作为项目语言，且在实践过程中发现springdata jpa和springdata neo4j存在冲突，需要分开，故必须对项目的微服务进行设计。</p>
+<p>本项目中微服务间交互使用http协议，使用openfeign封装好的方式实现请求，该方案无需对编码人员增加太多的负担，编码人员只需要完成http接口的编写即可进行rpc，这是非常好的rpc方案。当然，涉及到多语言（Java，Go，Rust等混合）同时使用的时后，也可以去寻找其他普适性的框架，如grpc等，但就本项目而言，并不需要grpc来提升性能，相比Spark实时计算造成的耗时，json解析的耗时实在是不算什么了。</p>
 
                     </main>
 
@@ -189,7 +191,7 @@
                                 <i class="fa fa-angle-left"></i>
                             </a>
 
-                            <a rel="next prefetch" href="../design/choice.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next prefetch" href="../design/secure.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
 
@@ -203,7 +205,7 @@
                         <i class="fa fa-angle-left"></i>
                     </a>
 
-                    <a rel="next prefetch" href="../design/choice.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next prefetch" href="../design/secure.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
             </nav>

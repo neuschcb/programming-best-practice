@@ -88,7 +88,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="../index.html"><strong aria-hidden="true">1.</strong> 总览</a></li><li class="chapter-item expanded affix "><li class="part-title">分析</li><li class="chapter-item expanded "><a href="../analyse/requirement_analysis.html"><strong aria-hidden="true">2.</strong> 需求分析流程</a></li><li class="chapter-item expanded affix "><li class="part-title">设计</li><li class="chapter-item expanded "><a href="../design/ui_design.html"><strong aria-hidden="true">3.</strong> UI设计</a></li><li class="chapter-item expanded "><a href="../design/api_design.html"><strong aria-hidden="true">4.</strong> API设计</a></li><li class="chapter-item expanded "><a href="../design/micro_design.html"><strong aria-hidden="true">5.</strong> 微服务设计</a></li><li class="chapter-item expanded "><a href="../design/choice.html" class="active"><strong aria-hidden="true">6.</strong> 选型</a></li><li class="chapter-item expanded affix "><li class="part-title">编码</li><li class="chapter-item expanded "><a href="../code/project_structure.html"><strong aria-hidden="true">7.</strong> 项目结构</a></li><li class="chapter-item expanded "><a href="../code/encapsulation.html"><strong aria-hidden="true">8.</strong> 封装</a></li><li class="chapter-item expanded "><a href="../code/intercept.html"><strong aria-hidden="true">9.</strong> 拦截</a></li><li class="chapter-item expanded affix "><li class="part-title">测试</li><li class="chapter-item expanded affix "><li class="part-title">部署</li><li class="chapter-item expanded affix "><li class="part-title">杂项</li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../index.html"><strong aria-hidden="true">1.</strong> 总览</a></li><li class="chapter-item expanded affix "><li class="part-title">分析</li><li class="chapter-item expanded "><a href="../analyse/requirement_analysis.html"><strong aria-hidden="true">2.</strong> 需求分析</a></li><li class="chapter-item expanded "><a href="../analyse/requirement_analysis.html"><strong aria-hidden="true">3.</strong> 成本分析</a></li><li class="chapter-item expanded affix "><li class="part-title">设计</li><li class="chapter-item expanded "><a href="../design/ui_design.html"><strong aria-hidden="true">4.</strong> UI设计</a></li><li class="chapter-item expanded "><a href="../design/api_design.html"><strong aria-hidden="true">5.</strong> API设计</a></li><li class="chapter-item expanded "><a href="../design/micro_design.html"><strong aria-hidden="true">6.</strong> 微服务设计</a></li><li class="chapter-item expanded "><a href="../design/secure.html"><strong aria-hidden="true">7.</strong> 安全性设计</a></li><li class="chapter-item expanded "><a href="../design/choice.html" class="active"><strong aria-hidden="true">8.</strong> 选型</a></li><li class="chapter-item expanded affix "><li class="part-title">编码</li><li class="chapter-item expanded "><a href="../code/project_structure.html"><strong aria-hidden="true">9.</strong> 项目结构</a></li><li class="chapter-item expanded "><a href="../code/encapsulation.html"><strong aria-hidden="true">10.</strong> 封装</a></li><li class="chapter-item expanded "><a href="../code/intercept.html"><strong aria-hidden="true">11.</strong> 拦截</a></li><li class="chapter-item expanded affix "><li class="part-title">测试</li><li class="chapter-item expanded "><a href="../testing/index.html"><strong aria-hidden="true">12.</strong> 测试</a></li><li class="chapter-item expanded affix "><li class="part-title">部署</li><li class="chapter-item expanded "><a href="../deploy/single.html"><strong aria-hidden="true">13.</strong> 单机部署</a></li><li class="chapter-item expanded "><a href="../deploy/container.html"><strong aria-hidden="true">14.</strong> 容器部署</a></li><li class="chapter-item expanded affix "><li class="part-title">杂项</li><li class="chapter-item expanded "><a href="../others/no_internet_programming.html"><strong aria-hidden="true">15.</strong> 关于内网开发</a></li><li class="chapter-item expanded "><a href="../others/continuous-integration.html"><strong aria-hidden="true">16.</strong> 关于持续集成</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle">
                 <div class="sidebar-resize-indicator"></div>
@@ -180,12 +180,20 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="选型"><a class="header" href="#选型">选型</a></h1>
+<p>项目的选型其实非常简单，只要遵循如下的原则：</p>
+<ul>
+<li>除了项目核心功能的实现外，所有的选型全部选择成熟的开源项目</li>
+<li>选择文档完善，用的人较多的开源项目</li>
+<li>如果你不确定该项目是否可用，那就先选择它，但注意要在其上再封装一层，方便随时替换</li>
+<li>重要的部分选择重量级的项目，不太重要的部分选择轻量的项目</li>
+<li>选择简单易用好理解的开源项目</li>
+</ul>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                            <a rel="prev" href="../design/micro_design.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="../design/secure.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
 
@@ -199,7 +207,7 @@
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="../design/micro_design.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="../design/secure.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
 

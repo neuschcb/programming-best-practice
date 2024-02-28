@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>需求分析流程 - 软件开发最佳实践</title>
+        <title>成本分析 - 软件开发最佳实践</title>
 
 
         <!-- Custom HTML head -->
@@ -88,7 +88,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="../index.html"><strong aria-hidden="true">1.</strong> 总览</a></li><li class="chapter-item expanded affix "><li class="part-title">分析</li><li class="chapter-item expanded "><a href="../analyse/requirement_analysis.html" class="active"><strong aria-hidden="true">2.</strong> 需求分析流程</a></li><li class="chapter-item expanded affix "><li class="part-title">设计</li><li class="chapter-item expanded "><a href="../design/ui_design.html"><strong aria-hidden="true">3.</strong> UI设计</a></li><li class="chapter-item expanded "><a href="../design/api_design.html"><strong aria-hidden="true">4.</strong> API设计</a></li><li class="chapter-item expanded "><a href="../design/micro_design.html"><strong aria-hidden="true">5.</strong> 微服务设计</a></li><li class="chapter-item expanded "><a href="../design/choice.html"><strong aria-hidden="true">6.</strong> 选型</a></li><li class="chapter-item expanded affix "><li class="part-title">编码</li><li class="chapter-item expanded "><a href="../code/project_structure.html"><strong aria-hidden="true">7.</strong> 项目结构</a></li><li class="chapter-item expanded "><a href="../code/encapsulation.html"><strong aria-hidden="true">8.</strong> 封装</a></li><li class="chapter-item expanded "><a href="../code/intercept.html"><strong aria-hidden="true">9.</strong> 拦截</a></li><li class="chapter-item expanded affix "><li class="part-title">测试</li><li class="chapter-item expanded affix "><li class="part-title">部署</li><li class="chapter-item expanded affix "><li class="part-title">杂项</li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../index.html"><strong aria-hidden="true">1.</strong> 总览</a></li><li class="chapter-item expanded affix "><li class="part-title">分析</li><li class="chapter-item expanded "><a href="../analyse/requirement_analysis.html" class="active"><strong aria-hidden="true">2.</strong> 需求分析</a></li><li class="chapter-item expanded "><a href="../analyse/requirement_analysis.html" class="active"><strong aria-hidden="true">3.</strong> 成本分析</a></li><li class="chapter-item expanded affix "><li class="part-title">设计</li><li class="chapter-item expanded "><a href="../design/ui_design.html"><strong aria-hidden="true">4.</strong> UI设计</a></li><li class="chapter-item expanded "><a href="../design/api_design.html"><strong aria-hidden="true">5.</strong> API设计</a></li><li class="chapter-item expanded "><a href="../design/micro_design.html"><strong aria-hidden="true">6.</strong> 微服务设计</a></li><li class="chapter-item expanded "><a href="../design/secure.html"><strong aria-hidden="true">7.</strong> 安全性设计</a></li><li class="chapter-item expanded "><a href="../design/choice.html"><strong aria-hidden="true">8.</strong> 选型</a></li><li class="chapter-item expanded affix "><li class="part-title">编码</li><li class="chapter-item expanded "><a href="../code/project_structure.html"><strong aria-hidden="true">9.</strong> 项目结构</a></li><li class="chapter-item expanded "><a href="../code/encapsulation.html"><strong aria-hidden="true">10.</strong> 封装</a></li><li class="chapter-item expanded "><a href="../code/intercept.html"><strong aria-hidden="true">11.</strong> 拦截</a></li><li class="chapter-item expanded affix "><li class="part-title">测试</li><li class="chapter-item expanded "><a href="../testing/index.html"><strong aria-hidden="true">12.</strong> 测试</a></li><li class="chapter-item expanded affix "><li class="part-title">部署</li><li class="chapter-item expanded "><a href="../deploy/single.html"><strong aria-hidden="true">13.</strong> 单机部署</a></li><li class="chapter-item expanded "><a href="../deploy/container.html"><strong aria-hidden="true">14.</strong> 容器部署</a></li><li class="chapter-item expanded affix "><li class="part-title">杂项</li><li class="chapter-item expanded "><a href="../others/no_internet_programming.html"><strong aria-hidden="true">15.</strong> 关于内网开发</a></li><li class="chapter-item expanded "><a href="../others/continuous-integration.html"><strong aria-hidden="true">16.</strong> 关于持续集成</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle">
                 <div class="sidebar-resize-indicator"></div>
@@ -179,7 +179,23 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="需求分析流程"><a class="header" href="#需求分析流程">需求分析流程</a></h1>
+                        <h1 id="需求分析"><a class="header" href="#需求分析">需求分析</a></h1>
+<h2 id="方法"><a class="header" href="#方法">方法</a></h2>
+<p>需求分析是项目管理和软件开发中至关重要的阶段，它确保项目团队对项目目标和用户需求有清晰的理解。在进行需求分析时，需要注意以下几个关键方面：</p>
+<pre><code>明确定义项目范围： 确保明确项目的整体范围和目标。理解项目的边界和涵盖的功能，防止在后续阶段发生范围蔓延。
+与利益相关者沟通： 与项目相关的各方进行充分的沟通，包括项目发起人、最终用户、业务分析员等。了解他们的期望和需求，以便更好地满足他们的期望。
+识别和管理需求： 将需求划分为不同的类型，例如功能性需求、非功能性需求和约束性需求。确保需求是可管理的，能够在整个项目周期内进行追踪和变更。
+建立优先级： 对需求进行优先级排序，以确保在有限资源下首先满足最重要的需求。这有助于确保项目在有限的时间内交付关键功能。
+验证和确认需求： 通过与利益相关者的验证和确认，确保对需求的理解是准确的。这有助于避免由于误解或沟通不足而引起的问题。
+考虑未来的可扩展性： 需求分析时要考虑到未来的变化和扩展。尽量设计灵活的系统，以便在将来轻松地适应新的需求。
+避免过度工程： 避免在项目中包含不必要或过度复杂的功能。确保每个需求都有其明确的业务目的，并能够为项目的成功做出贡献。
+文档化和追踪： 将所有需求详细记录，并确保在项目的整个生命周期中进行跟踪。这有助于团队了解项目的状态，追踪变更，并提供清晰的项目文档。
+风险管理： 识别和评估与需求相关的风险。这有助于提前预测潜在的问题并采取适当的措施来降低风险。
+团队协作： 确保需求分析是一个团队协作的过程。涉及到的团队成员应该共同参与，确保他们对需求有共同的理解。
+</code></pre>
+<p>我们总结了需求分析的流程如下：了解现状-&gt;了解痛点-&gt;了解形式-&gt;了解边界-&gt;提出解决方案。</p>
+<p>其中了解项目的开发形式和了解边界是我们觉得对开发的影响最大的部分，如本项目其实一直对于项目形式不是很明确（其实这其中一大部分原因是因为我们也不知道我们能拿到什么数据和API，强烈建议需求分析过程中一定要明确的了解到底能拿到什么，这对设计流程是一大助力），开发过独立的系统和现有系统进行集成，也提出过对原有的系统进行改造，最后还是开发了一个独立的系统。</p>
+<p>了解边界主要是确定开发什么不开发什么，笔者个人认为这是对本人影响最大的东西，本人就经常对项目做出超出边界的构想，这在实践中其实是有问题的，如果新的项目需要做需求分析强烈建议确定好边界并以文档的形式固定下来。</p>
 
                     </main>
 
@@ -189,7 +205,7 @@
                                 <i class="fa fa-angle-left"></i>
                             </a>
 
-                            <a rel="next prefetch" href="../design/ui_design.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next prefetch" href="../analyse/requirement_analysis.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
 
@@ -203,7 +219,7 @@
                         <i class="fa fa-angle-left"></i>
                     </a>
 
-                    <a rel="next prefetch" href="../design/ui_design.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next prefetch" href="../analyse/requirement_analysis.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
             </nav>
